@@ -1,0 +1,450 @@
+body {
+    font-family: 'Antic Slab';
+    height: 100%;
+}
+
+/*Este es solo el banner turquesa*/
+header {
+    background-color: #048BA8;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    /*centrar los elementos a lo largo del contenedor*/
+    justify-content: space-between;
+    /*centrar los elementos a lo alto*/
+    align-items: center;
+
+}
+
+/*Esta es la imagen del logo*/
+#logo{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin-top: 20px;
+    margin-left: 10px;   
+}
+
+/*Este es el titulo Veterinaria Moka*/
+h1{
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    padding: 10px;
+    color: white;
+}
+
+/*Este es el titulo que deseas hacer*/
+h2{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 40px;
+    padding: 40px;
+}
+
+/*Este es el Nosotros, contactanos, xxx*/
+nav {
+    font-size: 17px;
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*Contenedor de el que desear hacer como tal*/
+#contenedor {
+    width: 700px;
+    height: 600px;
+    margin: auto;
+    border: 3px solid white; /*PREGUNTAR AL PROFE*/
+}
+
+/*Espacio en el que esta suspendido el boton*/
+.contenedorboton{
+    display: inline;
+    flex-direction: row;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+
+
+/*Formato del boton como tal*/
+#btnGuardar{
+    width: 150px;
+    height: 150px;
+    font-size: 30px;
+    background-color: #FFFBFB;
+    font-family: 'Antic Slab';
+    border: none;
+    border-radius: 10px;
+    box-shadow: -3px 13px 15px 3px rgba(0,0,0,0.2);
+    -webkit-box-shadow: -3px 13px 15px 3px rgba(0,0,0,0.2);
+    -moz-box-shadow: -3px 13px 15px 3px rgba(0,0,0,0.2);
+    margin-bottom: 30px;
+    margin-left: 50px;
+    
+    
+    
+}
+
+/*Formato del boton como tal*/
+#btnEliminar{
+    width: 150px;
+    height: 150px;
+    font-size: 30px;
+    background-color: #FFFBFB;
+    font-family: 'Antic Slab';
+    border: none;
+    border-radius: 10px;
+    box-shadow: -3px 13px 15px 3px rgba(0,0,0,0.2);
+    -webkit-box-shadow: -3px 13px 15px 3px rgba(0,0,0,0.2);
+    -moz-box-shadow: -3px 13px 15px 3px rgba(0,0,0,0.2);
+    margin-bottom: 30px;
+    margin-left: 50px;
+    
+    
+    
+}
+
+
+/*Formato del boton como tal*/
+#btnReprogramar{
+    width: 200px;
+    height: 150px;
+    font-size: 30px;
+    background-color: #FFFBFB;
+    font-family: 'Antic Slab';
+    border: none;
+    border-radius: 10px;
+    box-shadow: -3px 13px 15px 3px rgba(0,0,0,0.2);
+    -webkit-box-shadow: -3px 13px 15px 3px rgba(0,0,0,0.2);
+    -moz-box-shadow: -3px 13px 15px 3px rgba(0,0,0,0.2);
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+
+
+#btnCancelar{
+    width: 150px;
+    height: 150px;
+    font-size: 30px;
+    background-color: #FFFBFB;
+    font-family: 'Antic Slab';
+    border: none;
+    border-radius: 10px;
+    box-shadow: -3px 13px 15px 3px rgba(0,0,0,0.2);
+    -webkit-box-shadow: -3px 13px 15px 3px rgba(0,0,0,0.2);
+    -moz-box-shadow: -3px 13px 15px 3px rgba(0,0,0,0.2);
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+
+/*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}*/
+
+.lateral{
+    width: 278px;
+    height: 800px;
+    opacity: 1;
+    background:#99C24D ;
+    /*PREGUNTAR AL PROFE
+    position: relative;*/
+    float: left;
+}
+
+
+.sidebar img{
+    display: block;
+    margin: 40px auto;
+}
+.Parent {
+    float: left;
+    clear: none; 
+    display: flex;
+}
+
+.sidebar ul li{
+    list-style: none;
+    padding: 12px 10px;
+
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-family: 'Antic Slab';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.sidebar ul li:hover{
+    background: #4e4e4e;
+    cursor: pointer;
+}
+
+
+#puppy{
+    margin-top: 80px;
+ 
+
+    /*PREGUNTAR AL PROFE
+    justify-content: end;
+    position: absolute;
+    bottom: 0;
+    left: 0;*/
+}
+
+#btnGuardar:hover{
+    background: orangered;
+    cursor: pointer;
+}
+
+#btnReprogramar:hover{
+    background: orangered;
+    cursor: pointer;
+}
+
+#btnCancelar:hover{
+    background:orangered;
+    cursor: pointer;
+}
+
+.button:hover{
+    /*text-decoration: underline;
+    text-decoration-color: rgb(250, 114, 64);
+    -moz-text-decoration-color: rgb(250, 114, 64);
+    text-decoration-thickness: 5px;*/
+    transform: scale(1.4);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*button :hover{
+
+    background-color: yellow;
+
+}*/
+
+
+/*#logo{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 50px;
+    padding: 40px;
+}*/
+
+/*.contenedor-input label{
+    display: block;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 20px;
+    margin-left: 10px;
+}
+
+
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+}
+*/
+
+#contenedor1 {
+    position: absolute;
+    width: 500px;
+    height: 160px;
+    top: 110px;
+    left: 300px;
+    float: left;
+    /*border: 2px solid red;*/
+}
+
+
+#label0 {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    top: 10px;
+    left: 20px;
+    float: left;
+    /*border: 2px solid rgb(0, 26, 255);*/
+}
+
+#label1 {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    top: 40px;
+    left: 20px;
+    float: left;
+    /*border: 2px solid rgb(0, 26, 255);*/
+}
+
+#plato99 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 40px;
+    left: 200px;
+    float: left;
+    border: 2px solid rgb(0, 26, 255);
+}
+
+#label2 {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    top: 70px;
+    left: 20px;
+    float: left;
+    /*border: 2px solid rgb(0, 26, 255);*/
+}
+
+#ingredientes99 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 70px;
+    left: 200px;
+    float: left;
+    border: 2px solid rgb(0, 26, 255);
+}
+
+#label3 {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    top: 100px;
+    left: 20px;
+    float: left;
+    border: 2px solid rgb(0, 26, 255);
+}
+
+#fecha_expiracion {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 100px;
+    left: 200px;
+    float: left;
+    border: 2px solid rgb(0, 26, 255);
+}
+
+
+#label4 {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    top: 100px;
+    left: 20px;
+    float: left;
+    /*border: 2px solid rgb(0, 26, 255);*/
+}
+
+#costo99 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 100px;
+    left: 200px;
+    float: left;
+    border: 2px solid rgb(0, 26, 255);
+}
+
+#label44 {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    top: 140px;
+    left: 200px;
+    float: left;
+    border: 2px solid rgb(0, 26, 255);
+}
+
+#contenedor4 {
+    position: absolute;
+    width: 800px;
+    height: 50px;
+    top: 375px;
+    left: 30px;
+    float: left;
+    /*border: 2px solid rgb(98, 0, 255);*/
+}
+
+#contenedor5556 {
+    position: absolute;
+    width: 800px;
+    height: 50px;
+    top: 575px;
+    left: 30px;
+    float: left;
+    /*border: 2px solid rgb(98, 0, 255);*/
+}
+
+#contenedor555 {
+    position: absolute;
+    width: 1140px;
+    height: 740px;
+    top: 150px;
+    left: 300px;
+    float: left;
+    /*border: 2px solid rgb(255, 0, 191);*/
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 150px;
+  }
+
+table, tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 500px;
+  }
+
+#l1 {
+    width: 200px;
+  }
+
+  #l2 {
+    width: 550px;
+  }
+    
+  #l3 {
+    width: 200px;
+  }
+      
+  #l4 {
+    width: 200px;
+  }

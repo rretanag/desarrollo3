@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secretaria Pagina Principal Cita</title>
+    <link rel="stylesheet" href=".\reset.css"></link>
+    <link rel="stylesheet" href=".\general.css"></link>
+    <link href='https://fonts.googleapis.com/css?family=Antic Slab' rel='stylesheet'> 
+    <script src=".\script2.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9" defer></script>
+    <script src=".\servicio-personas.js" defer></script>
+    <script src=".\listar-platos.js" defer></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+ 
+<!--ul>li*5>a[href=#]{Elemento $}-->
+
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <h1>Restaurante X<br>platillos</br></h1>
+        </div>
+        <nav>   
+            <a href=".\inicio.html">Inicio</a>
+            <a href=".\registrar.html">Registrar</a>
+            <a href=".\platillos.html">Platillos</a></nav>
+    </header>
+<div class="parent">   
+    <div class="lateral">
+        <div class="sidebar">         
+            <ul>
+        
+            </ul>
+               
+        </div>
+    </div> 
+        
+
+</div>
+
+
+
+
+    
+<!-- contenedor4 START -->
+<div id="contenedor4">
+<button type="button" id="btnGuardar" onclick = "mostrar_datos_en_tabla()" class="button"><img src="https://img.icons8.com/wired/80/000000/save.png"/ alt="salvaricon" style="width:60px;height:60px;">Buscar Platos</button>
+
+</div>
+<!-- contenedor4 END -->
+
+<!-- contenedor555 START -->
+<div id="contenedor555">
+    <table id="informacion-registro">
+    </section>
+    <section id="informacion">
+        
+        
+        <table id="informacion-registro">
+            <thead>
+                <tr>
+                    <th id="l1">Plato</th>
+                    <th id="l2">Ingredientes</th>
+                    <th id="l3">Costo</th>
+                    <th id="l4">Acciones</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+    
+    
+</div>
+<!-- contenedor555 END -->
+
+
+
+</body>
+</html>

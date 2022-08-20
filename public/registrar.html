@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secretaria Pagina Principal Cita</title>
+    <link rel="stylesheet" href=".\reset.css"></link>
+    <link rel="stylesheet" href=".\general.css"></link>
+    <link href='https://fonts.googleapis.com/css?family=Antic Slab' rel='stylesheet'> 
+    <script src=".\script2.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9" defer></script>
+    <script src=".\servicio-personas.js" defer></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+ 
+<!--ul>li*5>a[href=#]{Elemento $}-->
+
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <h1>Restaurante X<br>registrar</br></h1>
+        </div>
+        <nav>   
+            <a href=".\inicio.html">Inicio</a>
+            <a href=".\registrar.html">Registrar</a>
+            <a href=".\platillos.html">Platillos</a></nav>
+    </header>
+<div class="parent">   
+    <div class="lateral">
+        <div class="sidebar">         
+            <ul>
+        
+            </ul>
+               
+        </div>
+    </div> 
+        
+
+</div>
+
+<!-- contenedor1 START -->
+<!-- FORM START -->
+<form action = "" id="contenedor1">
+    <label id="label0" for="nombrex">Agregar Platillo</label>
+
+    <label id="label1" for="plato99">Nombre del plato</label>
+    <input id="plato99" type="text" name="entry_text_nombre_tarjeta" placeholder="Nombre del plato.." required>
+    <label id="label2" for="ingredientes99">Ingredientes</label>
+    <input id="ingredientes99" type="text" name="entry_text_numero_tarjeta" placeholder="Ingredientes principales.." required>
+    <label id="label4" for="costo99">Costo</label>
+    <input id="costo99" type="text" name="entry_text_cvv" placeholder="Costo.." required>
+
+
+</form>
+<!-- FORM END -->
+<!-- contenedor1 END -->
+
+
+    
+<!-- contenedor4 START -->
+<div id="contenedor4">
+<button type="button" id="btnGuardar" onclick = "enviar_informacion2()" class="button"><img src="https://img.icons8.com/wired/80/000000/save.png"/ alt="salvaricon" style="width:60px;height:60px;">Registrar Platos</button>
+
+</div>
+<!-- contenedor4 END -->
+
+
+
+
+</body>
+</html>

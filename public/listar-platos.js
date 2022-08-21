@@ -11,9 +11,9 @@ const mostrar_datos_en_tabla = async() => {
     for (let i = 0; i < listado_de_usuarios.length; i++) {
         let fila = tbody.insertRow();
 
-        let celda_plato = (fila.insertCell().innerHTML = listado_de_usuarios[i]["plato"]);
-        let celda_ingredientes = (fila.insertCell().innerHTML = listado_de_usuarios[i]["ingredientes"]);
-        let celda_costo = (fila.insertCell().innerHTML = listado_de_usuarios[i]["costo"]);
+        let celda_nombre = (fila.insertCell().innerHTML = listado_de_usuarios[i]["nombre"]);
+        let celda_apellidos = (fila.insertCell().innerHTML = listado_de_usuarios[i]["apellidos"]);
+        let celda_email = (fila.insertCell().innerHTML = listado_de_usuarios[i]["email"]);
 
         //editar
         let celda_btn_editar = fila.insertCell();
@@ -24,7 +24,7 @@ const mostrar_datos_en_tabla = async() => {
         botonx.addEventListener("click",()=>{
             //console.log(listado_de_usuarios[i]_id);
             //localStorage.setItem("id_mongo", listado_de_usuarios[i]_id);
-            localStorage.setItem("plato", listado_de_usuarios[i].plato);
+            localStorage.setItem("nombre", listado_de_usuarios[i].nombre);
             window.location.href="editar-plato.html";
 
 
@@ -42,15 +42,15 @@ const filtrar_datos = () => {
     let coincidencias = false;
 
     for (let i = 0; i < listado_de_usuarios.length; i++) {
-        let costo = listado_de_usuarios[i]["costo"].toLowerCase();
-        let ingredientes = listado_de_usuarios[i]["ingredientes"];
+        let email = listado_de_usuarios[i]["email"].toLowerCase();
+        let apellidos = listado_de_usuarios[i]["apellidos"];
 
-        if (costo.includes(filtro) || ingredientes.includes(filtro)) {
+        if (email.includes(filtro) || apellidos.includes(filtro)) {
             let fila = tbody.insertRow();
 
-            let celdaplato = (fila.insertCell().innerHTML = listado_de_usuarios[i]["plato"]);
-            let celdaingredientes = (fila.insertCell().innerHTML = listado_de_usuarios[i]["ingredientes"]);
-            let celdacosto = (fila.insertCell().innerHTML = listado_de_usuarios[i]["costo"]);
+            let celdanombre = (fila.insertCell().innerHTML = listado_de_usuarios[i]["nombre"]);
+            let celdaapellidos = (fila.insertCell().innerHTML = listado_de_usuarios[i]["apellidos"]);
+            let celdaemail = (fila.insertCell().innerHTML = listado_de_usuarios[i]["email"]);
 
             coincidencias = true;
         }

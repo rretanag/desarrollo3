@@ -5,7 +5,7 @@ const inputcvv = document.getElementById("costo99");
 
 //campos vacios
 function camposVacios() {
-    //alert("ojo0");
+    alert("ojo0");
     let error = false;
     let campos_requeridos = document.querySelectorAll("#contenedor1 [required]");
     for (let i = 0; i < campos_requeridos.length; i++) {
@@ -25,16 +25,16 @@ function camposVacios() {
 
 //validar cvv
 function validarCvv() {
-    //alert("Boton Presionado2");
+    alert("Boton Presionado2!!!!!!!!!!!");
     let error = false;
     let campos_requeridos = document.querySelectorAll("#contenedor1 [required]");
-    //alert("Boton Presionado3");
+    alert("Boton Presionado3");
     let texto_usuario = inputcvv.value;
-    //alert("Boton Presionado4");
+    alert("Boton Presionado4");
     
     let expresion_tarjeta = /[1-9]/;
     let expresion_tarjeta2 = /-/;
-    //alert("Boton Presionado5");
+    alert("Boton Presionado5");
         
     
     if (expresion_tarjeta.test(texto_usuario) == false) {
@@ -62,13 +62,13 @@ function validarCvv() {
 
 
 function enviar_informacion2() {
-    //alert("Boton Presionado1");
-    //Swal.fire('Any fool can use a computer');
+    alert("Boton Presionado1");
+    Swal.fire('Any fool can use a computer');
     let error_campos_vacios = camposVacios();
     let error_cvv = validarCvv();
 
     if (error_campos_vacios) {
-        //alert("ojo1");
+        alert("ojo1");
         swal.fire({
             
             incon:"warning",
@@ -84,17 +84,17 @@ function enviar_informacion2() {
         });
 
     } else {
-        //alert("ojo2");
+        alert("ojo2");
         
-        let platox = inputNumTarjeta.value;
-        let ingredientesx = inputFechaExpiracion.value;
-        let costox = inputcvv.value;
+        let nombrex = inputNumTarjeta.value;
+        let apellidosx = inputFechaExpiracion.value;
+        let emailx = inputcvv.value;
 
-        //let platox = "w";
-        //let ingredientesx = "w";
-        //let costox = "1111";
+        //let nombrex = "w";
+        //let apellidosx = "w";
+        //let emailx = "1111";
 
-        registrar_persona(platox, ingredientesx, costox);
+        registrar_persona(nombrex, apellidosx, emailx);
 
         swal.fire({
             incon:"success",

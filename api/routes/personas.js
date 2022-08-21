@@ -5,10 +5,10 @@ const router = express.Router();
 
 
 
-//Endpoint permite realizar una búsqueda a la base de datos por costo del usuario
-router.get("/buscar-persona-costo", (req, res) => {
-    let costo = req.query.costo;
-    Persona.find({ costo: costo }, (error, personaDB) => {
+//Endpoint permite realizar una búsqueda a la base de datos por email del usuario
+router.get("/buscar-persona-email", (req, res) => {
+    let email = req.query.email;
+    Persona.find({ email: email }, (error, personaDB) => {
         if (error) {
             res.status(500).json({
                 resultado: false,
@@ -54,11 +54,11 @@ router.get("/listar", (req, res) => {
     });
 });
 
-//http://localhost:3000/api/buscar-persona-plato?plato=3-1111-1111
-//se realiza una búsqueda por plato
-router.get("/buscar-persona-plato", (req, res) => {
-    let plato = req.query.plato;
-    Persona.find({ plato: plato }, (error, personaDB) => {
+//http://localhost:3000/api/buscar-persona-nombre?nombre=3-1111-1111
+//se realiza una búsqueda por nombre
+router.get("/buscar-persona-nombre", (req, res) => {
+    let nombre = req.query.nombre;
+    Persona.find({ nombre: nombre }, (error, personaDB) => {
         if (error) {
             res.status(500).json({
                 resultado: false,
@@ -90,9 +90,9 @@ router.get("/buscar-persona-plato", (req, res) => {
 router.post("/registrar", (req, res) => {
     let body = req.body;
     let nueva_persona = new Persona({
-        plato: body.plato,
-        ingredientes: body.ingredientes,
-        costo: body.costo
+        nombre: body.nombre,
+        apellidos: body.apellidos,
+        email: body.email
     });
 
     nueva_persona.save((error, personaDB) => {

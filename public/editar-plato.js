@@ -3,23 +3,23 @@ const inputNumTarjeta = document.getElementById("plato99");
 const inputFechaExpiracion = document.getElementById("ingredientes99");
 const inputcvv = document.getElementById("costo99");
 
-let plato22 = localStorage.getItem("plato");
-//console.log(plato22);
+let nombre22 = localStorage.getItem("nombre");
+//console.log(nombre22);
 alert("###########################################");
-alert(plato22);
+alert(nombre22);
 
 let _id;
 
 const llenar_campos = async() => {
-    let persona999 = await obtener_persona_plato(plato22);
+    let persona999 = await obtener_persona_nombre(nombre22);
 
     _id = persona999[0]._id;
 
     //console.log(persona999);
     //console.log(persona999[0].foto);
-    inputNumTarjeta.value = persona999[0].plato;
-    inputFechaExpiracion.value = persona999[0].ingredientes;
-    inputcvv.value = persona999[0].costo;
+    inputNumTarjeta.value = persona999[0].nombre;
+    inputFechaExpiracion.value = persona999[0].apellidos;
+    inputcvv.value = persona999[0].email;
 
 }
 
@@ -107,15 +107,15 @@ function enviar_informacion222() {
     } else {
         //alert("ojo2");
         
-        let platox = inputNumTarjeta.value;
-        let ingredientesx = inputFechaExpiracion.value;
-        let costox = inputcvv.value;
+        let nombrex = inputNumTarjeta.value;
+        let apellidosx = inputFechaExpiracion.value;
+        let emailx = inputcvv.value;
 
-        //let platox = "w";
-        //let ingredientesx = "w";
-        //let costox = "1111";
+        //let nombrex = "w";
+        //let apellidosx = "w";
+        //let emailx = "1111";
 
-        modificar_persona(platox, ingredientesx, costox, _id);
+        modificar_persona(nombrex, apellidosx, emailx, _id);
 
         swal.fire({
             incon:"success",

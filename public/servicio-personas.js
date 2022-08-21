@@ -5,12 +5,12 @@ const registrar_persona = async(pcedula, pcorreo, pnombre) => {
         url: "http://localhost:3000/api/registrar",
         responseType: "json",
         data: {
-            //plato:"11",
-            //ingredientes:"22",
-            //costo: "444444444443333333333333333"
-            plato:pcedula,
-            ingredientes:pcorreo,
-            costo:pnombre
+            //nombre:"11",
+            //apellidos:"22",
+            //email: "444444444443333333333333333"
+            nombre:pcedula,
+            apellidos:pcorreo,
+            email:pnombre
         }
     }).
     then((res) => {
@@ -62,16 +62,16 @@ const listar_personas_BD = async() => {
 }
 
 
-const obtener_persona_plato = async(plato) => {
+const obtener_persona_nombre = async(nombre) => {
     let persona666;
     alert("ojo555wwwwwwwwwwwwwwwwwwwww");
-    alert(plato);
+    alert(nombre);
 
     try {
         const respuesta = await axios({
             method: "get",
-            params: { plato: plato },
-            url: "http://localhost:3000/api/buscar-persona-plato",
+            params: { nombre: nombre },
+            url: "http://localhost:3000/api/buscar-persona-nombre",
             responseType: "json"
         });
         persona666 = respuesta.data.persona;
@@ -88,9 +88,9 @@ const modificar_persona = async(pcedulax, pcorreox, pnombrex, p_idx) => {
         url: "http://localhost:3000/api/modificar",
         responseType: "json",
         data: {
-            plato: pcedulax,
-            ingredientes: pcorreox,
-            costo: pnombrex,
+            nombre: pcedulax,
+            apellidos: pcorreox,
+            email: pnombrex,
             _id: p_idx
         }
     }).then((res) => {
